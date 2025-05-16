@@ -1,0 +1,3 @@
+item = "apple"      # Edit this
+item = "banana"     # Skip this
+item = "cherry"     # Edit this

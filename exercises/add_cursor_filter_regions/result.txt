@@ -1,0 +1,10 @@
+indent_level_0
+    indent_level_1
+        indent_level_2 APPLE BANANA cherry
+        indent_level_2 BANANA cherry APPLE
+        indent_level_2 cherry APPLE BANANA
+indent_level_0
+    indent_level_1
+        indent_level_2 apple banana cherry
+        indent_level_2 banana cherry apple
+        indent_level_2 cherry apple banana

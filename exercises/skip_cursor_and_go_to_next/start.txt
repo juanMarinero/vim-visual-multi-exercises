@@ -1,0 +1,6 @@
+item = "apple"      # Edit this
+item = "banana"     # Skip this
+item = "cherry"     # Edit this
+item = "apple" "banana" "cherry" # q will jump to a 'b' here if any
+item = "banana" "cherry" "apple" # q will jump to a 'b' here if any and if not jumped to   previous line
+item = "cherry" "apple" "banana" # q will jump to a 'b' here if any and if not jumped to 2 previous lines

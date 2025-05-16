@@ -1,0 +1,4 @@
+APPLE _apple apple_ APPLE banana _banana banana_ banana
+cherry _cherry cherry_ CHERRY melon _melon melon_ melon
+apple _apple apple_ APPLE banana _banana banana_ banana
+CHERRY _cherry cherry_ CHERRY melon _melon melon_ melon

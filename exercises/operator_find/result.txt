@@ -1,0 +1,9 @@
+if went_back
+    put r.dir = 0
+    put r.a = new
+    put r.b = r.k
+
+elseif went_forth
+    put r.dir = 1
+    put r.b = new
+    put r.a = r.k

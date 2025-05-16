@@ -1,0 +1,3 @@
+item1 = "cherry"
+item2 = "apple"
+item3 = "banana"

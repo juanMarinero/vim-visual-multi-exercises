@@ -1,0 +1,5 @@
+name=Sam, age=38, hobby=gardening, best_friend=Frodo
+name=Frodo, age=50, hobby=reading, best_friend=Sam
+name=Gandalf, age=55k??, hobby=smoking, best_friend=__?
+name=Legolas, age=3000?, hobby=wandering, best_friend=Gimli
+name=Gimli, age=139, hobby=stonecraft, best_friend=Legolas

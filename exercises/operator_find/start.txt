@@ -1,0 +1,9 @@
+if went_back
+    let r.dir = 0
+    let r.a = new
+    let r.b = r.k
+
+elseif went_forth
+    let r.dir = 1
+    let r.b = new
+    let r.a = r.k

@@ -1,0 +1,2 @@
+~~~~~ ~~~~~ _apple _APPLE _apple_ _APPLE_ ~~~~~ ~~~~~
+apple APPLE _apple _APPLE _apple_ _APPLE_ apple APPLE

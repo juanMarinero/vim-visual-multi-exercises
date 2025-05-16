@@ -1,0 +1,7 @@
+item="apple", color="red", qty=2
+item="banana", color="green", qty=3
+item="cherry", color="red", qty=20
+item="melon", color="yellow", qty=1
+item="mango", color="green", qty=1
+item="kiwi", color="yellow", qty=4
+item="watermelon", color="dark green", qty=1

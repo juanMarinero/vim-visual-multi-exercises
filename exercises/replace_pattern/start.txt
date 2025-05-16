@@ -1,0 +1,4 @@
+param_table.AddNumber("num_control_buffers", options_.num_control_buffers);
+param_table.AddNumber("control_buffer_size", options_.control_buffer_size);
+param_table.AddNumber("num_payload_buffers", options_.num_payload_buffers);
+param_table.AddNumber("payload_buffer_size", options_.payload_buffer_size);

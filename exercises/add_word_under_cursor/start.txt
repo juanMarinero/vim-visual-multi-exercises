@@ -1,0 +1,6 @@
+item1 = "apple"
+item2 = "_apple"
+item3 = "apple_"
+item4 = "new apple"
+item5 = "_apple_"
+item6 = "old apple"

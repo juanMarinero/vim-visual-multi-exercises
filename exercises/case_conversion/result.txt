@@ -1,0 +1,3 @@
+wordA WORDB1A = abc.def
+wordA WORDB10A = abc.def
+wordA WORDB100A = abc.def

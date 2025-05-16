@@ -1,0 +1,6 @@
+item1 = "apple"
+new line
+item2 = "banana"
+new line
+item3 = "cherry"
+new line

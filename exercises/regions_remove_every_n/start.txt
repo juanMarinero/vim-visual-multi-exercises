@@ -1,0 +1,21 @@
+item "apple"
+item "red"
+item 2
+item "banana"
+item "green"
+item 3
+item "cherry"
+item "red"
+item 20
+item "melon"
+item "yellow"
+item 1
+item "mango"
+item "green"
+item 1
+item "kiwi"
+item "yellow"
+item 4
+item "watermelon"
+item "dark green"
+item 1
