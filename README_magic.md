@@ -1645,6 +1645,25 @@ node run-magic.js \
 
 5. Make a [pull request](https://github.com/juanMarinero/vim-visual-multi-exercises/pulls)
 
+VM has many commands, next are some **ToDo**-s exercises to be added. The easiest and most practical ones are listed at the top:
+- Cursor Operators as in [wiki/5.-Operators#cursor-operators](https://github.com/mg979/vim-visual-multi/wiki/5.-Operators#cursor-operators). Focus on describe limitations
+- `\\gS`, see `:help vm-reselect-last`
+- `:help vm-run-at-cursors`
+    - `\\z` to Run Normal, see `:help vm-run-normal` and [wiki/Commands-at-cursors#normal-commands](https://github.com/mg979/vim-visual-multi/wiki/Commands-at-cursors#normal-commands)
+    - `\\v` to Run Visual, see `:help vm-run-visual` and [wiki/Commands-at-cursors#visual-commands](https://github.com/mg979/vim-visual-multi/wiki/Commands-at-cursors#visual-commands)
+    - `\\x` to Run Ex,  see `:help vm-run-ex` and [wiki/Commands-at-cursors#ex-commands](https://github.com/mg979/vim-visual-multi/wiki/Commands-at-cursors#ex-commands)
+    - `\\@` to Run Macro see `:help vm-run-macro` and [wiki/Commands-at-cursors#macros](https://github.com/mg979/vim-visual-multi/wiki/Commands-at-cursors#macros)
+    - `\\Z` to Run Last Normal, no `:help` found, defined as `:<C-u>call b:VM_Selection.Edit.run_normal(g:Vm.last_normal[0], {'count': v:count1, 'recursive': g:Vm.last_normal[1]})` in [autoload/vm/plugs.vim](https://github.com/mg979/vim-visual-multi/blob/master/autoload/vm/plugs.vim)
+    - `\\V` to Run Last Visual, no `:help` found, defined as `:call b:VM_Selection.Edit.run_visual(g:Vm.last_visual[0], g:Vm.last_visual[1])` in [autoload/vm/plugs.vim](https://github.com/mg979/vim-visual-multi/blob/master/autoload/vm/plugs.vim)
+    - `\\X` to Run Last Ex, no `:help` found, defined as `:<C-u>call b:VM_Selection.Edit.run_ex(g:Vm.last_ex)` in [autoload/vm/plugs.vim](https://github.com/mg979/vim-visual-multi/blob/master/autoload/vm/plugs.vim)
+- `\\<CR>`, see `:help vm-single-mode`
+- `M`, read `:help vm-multiline-mode` and check GIF of [wiki/4.-Motions-and-Modes](https://github.com/mg979/vim-visual-multi/wiki/4.-Motions-and-Modes#multiline-mode)
+- `\\L` to run `"One Per Line"`
+- `:help vm-ex-commands`
+    - `:help vm-registers` exercise showing how VM-registers vary thanks to *Tools Menu* triggered with <code>\\\\\`</code> (`:help vm-mappings-buffer`) and `"`, or directly with  `:VMRegisters`
+    - `:help VMDebug`, `:help VMClear`, `:help VMSearch`, etc.
+
+
 ## FAQs
 
 
