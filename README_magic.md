@@ -22,6 +22,47 @@ Use `:help vm-quick-reference` or alike to read the up-to-date VM own documentat
 - In section's headers it appears as `leader-` instead of `\\` because one might not use the default `g:VM_leader`.
 - But the other way around in solutions to make it easier to understand (and apply) for Vim-beginners. Also to not confuse with Vim-mapleader (see `:help mapleader`).
 
+## Mappings
+
+### Default mappings
+
+Read `:help vm-mappings-default`.
+
+To see them run `:echo g:Vm`.
+Let's make it more human-readable. Write that vim-variable in a file:
+
+```sh
+vim -c 'redir > Vm_content.txt | echo g:Vm | redir END | quit'
+```
+
+Then replace `\\` with for example a `&`  so `json.dump` can handle it.
+Finally we can revert that, replacing `&&` with `leader-` (because [jq](https://github.com/jqlang/jq) cannot handle `\\`):
+
+```sh
+cat Vm_content.txt \
+  | sed 's/\\/\&/g' \
+  | python3 -c 'import sys, ast, json; print(json.dumps(ast.literal_eval(sys.stdin.read())))' \
+  | sed 's/&&/leader-/g' \
+  | jq . --indent 2 > Vm_content.json \
+  && cat Vm_content.json
+```
+
+Final JSON where each `leader-` should be `\\`:
+
+<!-- doc-gen CODE src=aux/DefaultMappings.json -->
+This content will be replaced by the local JSON script content.
+<!-- end-doc-gen -->
+
+
+### Overwrite mappings
+
+`:help vm-mappings-all`. Also read `:h vm-faq-mappings` and related Vim-tags sections in [doc/vm-faq.txt](https://github.com/mg979/vim-visual-multi/blob/master/doc/vm-faq.txt).
+
+For [kitty](https://github.com/kovidgoyal/kitty) terminal the `C-Down`/`C-Up` mappings might not work. Overwrite them like in `./mappings/kitty-terminal.vim`
+
+<!-- doc-gen CODE src=mappings/kitty-terminal.vim -->
+This content will be replaced by the local vim script content.
+<!-- end-doc-gen -->
 
 
 ## Contribute
