@@ -22,6 +22,49 @@ Use `:help vm-quick-reference` or alike to read the up-to-date VM own documentat
 - In section's headers it appears as `leader-` instead of `\\` because one might not use the default `g:VM_leader`.
 - But the other way around in solutions to make it easier to understand (and apply) for Vim-beginners. Also to not confuse with Vim-mapleader (see `:help mapleader`).
 
+
+
+## Special commands
+
+### Tools menu
+
+Do **not** confuse with `\\l` described in `:help vm-infoline`.
+
+`:help vm-mappings-buffer` says
+
+```
+Tools Menu  \\`  filter lines to buffer, etc
+```
+
+Alternative to <code>\\\\\`</code> we can run `:call vm#special#commands#menu()`, defined in [autoload/vm/special/commands.vim](https://github.com/mg979/vim-visual-multi/blob/master/autoload/vm/special/commands.vim). This prompts the user with a menu of commands:
+
+```
+"    - Show VM registers
+i    - Show regions info
+f    - Filter regions by pattern or expression
+l    - Filter lines with regions
+r    - Regions contents to buffer
+q    - Fill quickfix with regions lines
+Q    - Fill quickfix with regions positions and contents
+```
+
+We can also directly access each one with its respective command. For example to show regions info we can directly run `:call b:VM_Selection.Funcs.regions_contents()`, see practical use in [`leader-minus`/`leader-plus` to shrink/enlarge regions](#leader-minus%2Fleader-plus-to-shrink%2Fenlarge-regions).
+
+Read also `:help vm-ex-commands`.
+
+
+### `<C-v>` for pasting the unnamed VM register
+
+Read [doc/vm-tutorial](https://github.com/mg979/vim-visual-multi/blob/master/doc/vm-tutorial): `vim <path>/vim-visual-multi/doc/vm-tutorial -c '/Some experiments \~'`. Extract:
+
+```
+About <C-v> in insert mode: it's a special VM command that will paste the content of
+the unnamed VM register, if this has been filled with something.
+If you pressed <C-r>{register}, this would still work, but the pasted content would
+be the same for all cursors, since it would use vim (and not VM) registers.
+```
+
+
 ## Mappings
 
 ### Default mappings
