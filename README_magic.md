@@ -23,6 +23,25 @@ Use `:help vm-quick-reference` or alike to read the up-to-date VM own documentat
 - But the other way around in solutions to make it easier to understand (and apply) for Vim-beginners. Also to not confuse with Vim-mapleader (see `:help mapleader`).
 
 
+**Advance**
+
+* [Special commands](#special-commands)
+  * [Tools menu](#tools-menu)
+  * [`<C-V>` for pasting the unnamed VM register](#<c-v>-for-pasting-the-unnamed-vm-register)
+* [Mappings](#mappings)
+  * [Default mappings](#default-mappings)
+  * [Overwrite mappings](#overwrite-mappings)
+
+**Collaboration, ToDo-s & FAQs**
+
+* [Contribute](#contribute)
+* [FAQs](#faqs)
+  * [VM FAQs](#vm-faqs)
+  * [Vanilla markdown is not enough? Why is NodeJS needed?](#vanilla-markdown-is-not-enough%3F-why-is-nodejs-needed%3F)
+  * [Why is needed to display content of files instead of writting them directly on `README.md`?](#why-is-needed-to-display-content-of-files-instead-of-writting-them-directly-on-readme.md%3F)
+  * [Why does Markdown Magic process `README_magic.md` instead of `README.md`?](#why-does-markdown-magic-process-readme_magic.md-instead-of-readme.md%3F)
+  * [Troubleshooting](#troubleshooting)
+
 
 ## Special commands
 
