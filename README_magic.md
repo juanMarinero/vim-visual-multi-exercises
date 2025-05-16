@@ -5,7 +5,7 @@ A complement to the official [tutorial](https://github.com/mg979/vim-visual-mult
 **How to use**
 
 0. Read [doc/visual-multi.txt](https://github.com/mg979/vim-visual-multi/blob/master/doc/visual-multi.txt) and practice with [doc/vm-tutorial](https://github.com/mg979/vim-visual-multi/blob/master/doc/vm-tutorial).
-1. Read the [`C-Down`/`C-Up` to add cursors vertically](#c-down%2Fc-up-to-add-cursors-vertically) exercise to get familiar with VM (short for [vim-visual-multi](https://github.com/mg979/vim-visual-multi)). This is the most beginners-focused exercise and has screenshots.
+1. Read the [`C-Down`/`C-Up` to add cursors vertically](#c-downc-up-to-add-cursors-vertically) exercise to get familiar with VM (short for [vim-visual-multi](https://github.com/mg979/vim-visual-multi)). This is the most beginners-focused exercise and has screenshots.
 2. [Learning by Doing](https://en.wikipedia.org/wiki/Learning-by-doing). Go to an [exercise](#exercises) and try to solve it:
 - Make the left window buffer become identical to the right one applying VM commands: `cd <this_repo>/exercises/<exercise_name> && vim -d start.txt result.txt` or directly copy-paste the command of *Start vs result* section of the desired exercise.
 - To display the solution click on `▸ Solution` or use `:split steps.md`.
@@ -24,7 +24,7 @@ Use `:help vm-quick-reference` or alike to read the up-to-date VM own documentat
 
 <a id="exercises"></a>**Exercises**
 
-* [`C-Down`/`C-Up` to add cursors vertically](#c-down%2Fc-up-to-add-cursors-vertically)
+* [`C-Down`/`C-Up` to add cursors vertically](#c-downc-up-to-add-cursors-vertically)
   * [Compare-results](#add-cursors-vertically-compare-results)
 * [`leader-c` to add cursors vertically](#leader-c-to-add-cursors-vertically)
 * [`Q` to remove unwanted cursors after selection](#q-to-remove-unwanted-cursors-after-selection)
@@ -39,30 +39,30 @@ Use `:help vm-quick-reference` or alike to read the up-to-date VM own documentat
   * [Transpose programmatly](#transpose-programmatly)
 * [Rotate programmatly](#rotate-programmatly)
 * [`S` to surround](#s-to-surround)
-* [`C-n` in normal mode adds a word under cursor, keep pressing to find next occurrence](#c-n-in-normal-mode-adds-a-word-under-cursor%2C-keep-pressing-to-find-next-occurrence)
+* [`C-n` in normal mode adds a word under cursor, keep pressing to find next occurrence](#c-n-in-normal-mode-adds-a-word-under-cursor-keep-pressing-to-find-next-occurrence)
 * [`n` or `N` after `C-n`](#n-or-n-after-c-n)
-* [ `leader-/` for regex search](#leader-%2F-for-regex-search)
-* [`g/` to expand each region by search regex](#g%2F-to-expand-each-region-by-search-regex)
-* [`C-n` in visual mode adds selecting chars, keep pressing to find next occurrence](#c-n-in-visual-mode-adds-selecting-chars%2C-keep-pressing-to-find-next-occurrence)
+* [ `leader-/` for regex search](#leader--for-regex-search)
+* [`g/` to expand each region by search regex](#g-to-expand-each-region-by-search-regex)
+* [`C-n` in visual mode adds selecting chars, keep pressing to find next occurrence](#c-n-in-visual-mode-adds-selecting-chars-keep-pressing-to-find-next-occurrence)
 * [`C-n` in normal mode to add multiple regex-words](#c-n-in-normal-mode-to-add-multiple-regex-words)
 * [`C-n` case sensitive vs ignore-case vs smartcase](#c-n-case-sensitive-vs-ignore-case-vs-smartcase)
   * [Case sensitive](#case-sensitive)
   * [`leader-c` to ignore-case](#leader-c-to-ignore-case)
   * [`leader-c` twice to smart-case](#leader-c-twice-to-smart-case)
-* [`u`/`C-r` to undo/redo](#u%2Fc-r-to-undo%2Fredo)
+* [`u`/`C-r` to undo/redo](#uc-r-to-undoredo)
 * [`leader-w` to toggle whole word search](#leader-w-to-toggle-whole-word-search)
-* [`leader-a` to align, `[count]leader-<` to align by char,  `leader->` to align by regex](#leader-a-to-align-the-rightmost-column%2C-[count]leader-<-to-align-by-char%2C-leader->-to-align-by-regex)
+* [`leader-a` to align, `[count]leader-<` to align by char,  `leader->` to align by regex](#leader-a-to-align-the-rightmost-column-countleader--to-align-by-char--leader--to-align-by-regex)
 * [`leader-C` for case conversion](#leader-c-for-case-conversion)
 * [`leader-m` to merge regions](#leader-m-to-merge-regions)
 * [`leader-s` to split regions](#leader-s-to-split-regions)
-* [`leader-minus`/`leader-plus` to shrink/enlarge regions](#leader-minus%2Fleader-plus-to-shrink%2Fenlarge-regions)
+* [`leader-minus`/`leader-plus` to shrink/enlarge regions](#leader-minusleader-plus-to-shrinkenlarge-regions)
 * [`s` for select operator](#s-for-select-operator)
 * [`m` for find operator](#m-for-find-operator)
 * [`leader-f` to filter regions](#leader-f-to-filter-regions)
-* [`leader-n`/`leader-N` for numbering](#leader-n%2Fleader-n-for-numbering)
+* [`leader-n`/`leader-N` for numbering](#leader-nleader-n-for-numbering)
   * [Prepend](#numbering_prepend)
   * [Append](#numbering_append)
-* [`<M-S-Arrows>` to shift text](#<m-s-arrows>-to-shift-text)
+* [`<M-S-Arrows>` to shift text](#m-s-arrows-to-shift-text)
 * [`leader-e` to transform regions with expression](#leader-e-to-transform-regions-with-expression)
 * [`leader-R` to remove every n regions](#leader-r-to-remove-every-n-regions)
 
@@ -70,7 +70,7 @@ Use `:help vm-quick-reference` or alike to read the up-to-date VM own documentat
 
 * [Special commands](#special-commands)
   * [Tools menu](#tools-menu)
-  * [`<C-V>` for pasting the unnamed VM register](#<c-v>-for-pasting-the-unnamed-vm-register)
+  * [`<C-V>` for pasting the unnamed VM register](#c-v-for-pasting-the-unnamed-vm-register)
 * [Mappings](#mappings)
   * [Default mappings](#default-mappings)
   * [Overwrite mappings](#overwrite-mappings)
@@ -80,9 +80,9 @@ Use `:help vm-quick-reference` or alike to read the up-to-date VM own documentat
 * [Contribute](#contribute)
 * [FAQs](#faqs)
   * [VM FAQs](#vm-faqs)
-  * [Vanilla markdown is not enough? Why is NodeJS needed?](#vanilla-markdown-is-not-enough%3F-why-is-nodejs-needed%3F)
-  * [Why is needed to display content of files instead of writting them directly on `README.md`?](#why-is-needed-to-display-content-of-files-instead-of-writting-them-directly-on-readme.md%3F)
-  * [Why does Markdown Magic process `README_magic.md` instead of `README.md`?](#why-does-markdown-magic-process-readme_magic.md-instead-of-readme.md%3F)
+  * [Vanilla markdown is not enough? Why is NodeJS needed?](#vanilla-markdown-is-not-enough-why-is-nodejs-needed)
+  * [Why is needed to display content of files instead of writting them directly on `README.md`?](#why-is-needed-to-display-content-of-files-instead-of-writting-them-directly-on-readmemd)
+  * [Why does Markdown Magic process `README_magic.md` instead of `README.md`?](#why-does-markdown-magic-process-readme_magicmd-instead-of-readmemd)
   * [Troubleshooting](#troubleshooting)
 
 
@@ -714,7 +714,7 @@ N            find previous
 
 > Once VM is active, you can press `n` to get the next occurrence, `N` to get the previous one.
 
-In previous [section](#c-n-in-normal-mode-adds-a-word-under-cursor%2C-keep-pressing-to-find-next-occurrence) we combined `C-n` to add regions and `q` to skip and jump to next. Now we aim the same result using `Q` to remove regions and  `n`/`N` to move to next/previous region.
+In previous [section](#c-n-in-normal-mode-adds-a-word-under-cursor-keep-pressing-to-find-next-occurrence) we combined `C-n` to add regions and `q` to skip and jump to next. Now we aim the same result using `Q` to remove regions and  `n`/`N` to move to next/previous region.
 
 <details>
   <summary>Solution</summary>
@@ -813,7 +813,7 @@ vim -d start.txt result.txt
 
 ## `C-n` in visual mode adds selecting chars, keep pressing to find next occurrence
 
-Read `:help ` commands of section [`C-n` in normal mode adds a word under cursor, keep pressing to find next occurrence](#c-n-in-normal-mode-adds-a-word-under-cursor%2C-keep-pressing-to-find-next-occurrence).
+Read `:help ` commands of section [`C-n` in normal mode adds a word under cursor, keep pressing to find next occurrence](#c-n-in-normal-mode-adds-a-word-under-cursor-keep-pressing-to-find-next-occurrence).
 
 <details>
   <summary>Solution</summary>
@@ -846,7 +846,7 @@ vim -d start.txt result.txt
 
 ## `C-n` in normal mode to add multiple regex-words
 
-Read `:help ` commands of section [`C-n` in normal mode adds a word under cursor, keep pressing to find next occurrence](#c-n-in-normal-mode-adds-a-word-under-cursor%2C-keep-pressing-to-find-next-occurrence).
+Read `:help ` commands of section [`C-n` in normal mode adds a word under cursor, keep pressing to find next occurrence](#c-n-in-normal-mode-adds-a-word-under-cursor-keep-pressing-to-find-next-occurrence).
 
 <details>
   <summary>Solution</summary>
@@ -1550,7 +1550,7 @@ q    - Fill quickfix with regions lines
 Q    - Fill quickfix with regions positions and contents
 ```
 
-We can also directly access each one with its respective command. For example to show regions info we can directly run `:call b:VM_Selection.Funcs.regions_contents()`, see practical use in [`leader-minus`/`leader-plus` to shrink/enlarge regions](#leader-minus%2Fleader-plus-to-shrink%2Fenlarge-regions).
+We can also directly access each one with its respective command. For example to show regions info we can directly run `:call b:VM_Selection.Funcs.regions_contents()`, see practical use in [`leader-minus`/`leader-plus` to shrink/enlarge regions](#leader-minusleader-plus-to-shrinkenlarge-regions).
 
 Read also `:help vm-ex-commands`.
 
