@@ -1629,7 +1629,7 @@ npm install
 
 3. Edit `README_magic.md`. For example add [local content](./aux/new-section-template.md) or [remote content](./aux/new-section-template_remote.md)
 
-4. Run the [markdown-magic](https://github.com/mg979/markdown-magic) - [script](./run-magic.js) and check the result
+4. Run the [markdown-magic](https://github.com/DavidWells/markdown-magic) - [script](./run-magic.js) and check the result
 
 ```sh
 node run-magic.js \
@@ -1675,11 +1675,11 @@ Run `:help vm-faqs` or open [doc/vm-faq.txt](https://github.com/mg979/vim-visual
 ### Vanilla markdown is not enough? Why is NodeJS needed?
 
 Markdowns can**not** show scripts (nor remote nor local). 
-[markdown-magic](https://github.com/mg979/markdown-magic) comes to rescue, but it must be installed in a Node.js environment.
+[markdown-magic](https://github.com/DavidWells/markdown-magic) comes to rescue, but it must be installed in a Node.js environment.
 
 *Q*: And why not directly on a HTML script?
 
-*A*: I believe markdowns are easier for humans to read and edit, making them better suited for collaboration. While HTML scripts with Node.js offer many features that Markdown lacks, I don't need [most of] those advanced capabilities. For this project Node.js should be limited to using [markdown-magic](https://github.com/mg979/markdown-magic), and perhaps a few additional modules in the future.
+*A*: I believe markdowns are easier for humans to read and edit, making them better suited for collaboration. While HTML scripts with Node.js offer many features that Markdown lacks, I don't need [most of] those advanced capabilities. For this project Node.js should be limited to using [markdown-magic](https://github.com/DavidWells/markdown-magic), and perhaps a few additional modules in the future.
 
 
 ### Why is needed to display content of files instead of writting them directly on `README.md`?
@@ -1697,7 +1697,7 @@ The [contribute](#contribute) section instructs you to run the following JavaScr
 This content will be replaced by the local script content.
 <!-- end-doc-gen -->
 
-Thus content of `README_magic.md` is processed by [markdown-magic](https://github.com/mg979/markdown-magic), which outputs the result to `README.md`.
+Thus content of `README_magic.md` is processed by [markdown-magic](https://github.com/DavidWells/markdown-magic), which outputs the result to `README.md`.
 
 Next **non-existing** `--output` flag could achieve the same effect, for example: `npx markdown-magic --output README.md -- README_magic.md`.
 
