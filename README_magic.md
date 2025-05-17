@@ -1622,8 +1622,8 @@ cd vim-visual-multi-exercises
 2. Install the Node.js [modules](./package.json)
 
 ```sh
-nvm install  # Installs version from .nvmrc"
-nvm use      # Auto-switches to version from .nvmrc"
+nvm install  # Installs version from .nvmrc
+nvm use      # Auto-switches to version from .nvmrc
 npm install
 ```
 
