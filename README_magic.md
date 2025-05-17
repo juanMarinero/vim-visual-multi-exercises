@@ -1619,7 +1619,7 @@ git clone https://github.com/juanMarinero/vim-visual-multi-exercises
 cd vim-visual-multi-exercises
 ```
 
-2. Install the Node.js [modules](./requirements.txt)
+2. Install the Node.js [modules](./package.json)
 
 ```sh
 nvm install  # Installs version from .nvmrc"
