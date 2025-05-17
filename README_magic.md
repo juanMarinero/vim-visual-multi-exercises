@@ -149,9 +149,7 @@ B. [delta](https://github.com/dandavison/delta) diff. For example
 `:help vm-mappings-visual`
 
 
-`:help vm-mappings-buffer` quote:
-
-> Case Setting          \\c         cycle case setting ('scs' -> 'noic' -> 'ic')
+Do **not** confuse with `leader-c` of [`C-n` case sensitive vs ignore-case vs smartcase](#c-n-case-sensitive-vs-ignore-case-vs-smartcase).
 
 
 <details>
@@ -893,6 +891,8 @@ rg --case-sensitive '\\\\c' vm-tutorial # if shell interprets backslashes as esc
 ```
 
 For a programmatly approach check [wiki/5.-Operators#smart-case-change](https://github.com/mg979/vim-visual-multi/wiki/5.-Operators#smart-case-change).
+
+Do **not** confuse with [`leader-c` to add cursors vertically](#leader-c-to-add-cursors-vertically).
 
 
 ### Case sensitive
