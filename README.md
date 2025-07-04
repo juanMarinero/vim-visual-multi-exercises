@@ -3,6 +3,7 @@
   <a href="https://github.com/juanMarinero/vim-visual-multi-exercises?tab=readme-ov-file#license"><img src="https://img.shields.io/badge/License-GPLv3-blue" alt="License"></a>
   <img src="https://img.shields.io/badge/-Vim-019733?logo=vim&logoColor=white" alt="Vim">
   <img src="https://img.shields.io/badge/-Neovim-57A143?logo=neovim&logoColor=white" alt="NeoVim">
+  <a href="https://deepwiki.com/juanMarinero/vim-visual-multi-exercises"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki"></a>
 </div>
 <br/>
 
@@ -17,6 +18,17 @@ A complement to the official [tutorial](https://github.com/mg979/vim-visual-mult
 2. [Learning by Doing](https://en.wikipedia.org/wiki/Learning-by-doing). Go to an [exercise](#exercises) and try to solve it:
 - Make the left window buffer become identical to the right one applying VM commands: `cd <this_repo>/exercises/<exercise_name> && vim -d start.txt result.txt` or directly copy-paste the command of *Start vs result* section of the desired exercise.
 - To display the solution click on `▸ Solution` or use `:split steps.md`.
+
+<div align="center">
+  <a href="https://deepwiki.com/juanMarinero/vim-visual-multi-exercises/1-overview#exercise-file-structure">
+    <img 
+      src="media/ExerciseValidationWorkflow.png" 
+      alt="ExerciseValidationWorkflow" 
+      style="max-height: 80%; width: auto;"
+    >
+  </a>
+</div>
+
 3. To solve the exercises more programmatly read the [Transpose programmatly](#transpose-programmatly) exercise as example.
 4. All collaboration is appreciated: [contribute](#contribute).
 

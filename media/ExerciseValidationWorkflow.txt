@@ -1,0 +1,7 @@
+Image Source and Licensing Information
+-------------------------------------
+
+This image is based on a modification of the original work from:  
+https://deepwiki.com/juanMarinero/vim-visual-multi-exercises/1-overview#exercise-file-structure  
+
+For usage rights, refer to DeepWiki’s license terms or contact their team.
