@@ -1,3 +1,11 @@
+<div align="center">
+  <a href="https://github.com/juanMarinero/vim-visual-multi-exercises/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+  <a href="https://github.com/juanMarinero/vim-visual-multi-exercises?tab=readme-ov-file#license"><img src="https://img.shields.io/badge/License-GPLv3-blue" alt="License"></a>
+  <img src="https://img.shields.io/badge/-Vim-019733?logo=vim&logoColor=white" alt="Vim">
+  <img src="https://img.shields.io/badge/-Neovim-57A143?logo=neovim&logoColor=white" alt="NeoVim">
+</div>
+<br/>
+
 **Exercises** to learn [vim-visual-multi](https://github.com/mg979/vim-visual-multi).
 
 A complement to the official [tutorial](https://github.com/mg979/vim-visual-multi#tutorial).
